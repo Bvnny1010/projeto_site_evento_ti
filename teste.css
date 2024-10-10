@@ -1,0 +1,333 @@
+/*=====================================
+===============Background==============
+=======================================*/
+
+*{
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.background::before{
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(3,0,12,0.6), rgb(3,0,12)), url("./components/images/programming-background.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-blend-mode: darken;
+}
+
+/*=====================================
+=================Header================
+=================Botões================*/
+
+header{
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   /* background-color: rgb(27, 27, 27); /*Trocar cor, ajustar nav bar*/
+}
+
+i{
+    color:white
+}
+
+.header-icons{
+    display: flex;
+    gap: 14px;
+}
+
+.header-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: rgb(41, 192, 184);
+    }
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.header-button{
+    border: 2px solid rgb(41, 192, 184);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.8s;
+}
+
+.header-button:hover{
+    border: 1px solid rgb(41, 192, 184);
+    background-color: rgb(41, 192, 184);
+}
+
+/*======================================
+=================Header=================
+=================Logo===================*/
+
+.header-logo img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+/*=====================================
+==========Ajuste para mobile===========
+=======================================*/
+
+@media screen and (max-width: 768px){
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        i{
+            margin-top: 16px;
+            font-size: 34px;
+        }
+    }
+
+    .header-logo img{
+        height: 100px;
+        width: 100px;
+        margin-top:46px;
+    }
+
+    .header-button{
+        display: none;
+    }
+
+    .menuemail{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menuemail h2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .menuemail span{
+        line-height: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .menuemail form{
+        flex-direction: column;
+        width: 95%;
+    }
+
+
+}
+
+/*=====================================
+================Email==================
+=======================================*/
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.menuemail h2{
+    display: flex;
+    font-size: 56px;
+    line-height: 50%;
+    color: white;
+    margin-top: 2%;
+    margin-left: 40%;
+    
+}
+
+.menuemail span{
+    color: rgb(41, 192, 184)
+}
+
+.menuemail p{
+    line-height: 30px;
+    font-size: 20px;
+    max-width: 450px;
+    font-style: italic;
+    margin-top: 50px;
+    margin-left: 42%;
+    color: white;
+}
+
+
+.menuemail form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 10px;
+    margin-left: 38%;
+}
+
+.menuemail button{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(41, 192, 184);
+    color: white;
+    font-size: bold;
+    margin-left: 25%;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 15px;
+    
+}
+
+.menuemail button:hover{
+    cursor: pointer;
+}
+
+.menuemail input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+
+/*=====================================
+=================About=================
+=======================================*/
+.about{
+    background-color: rgba(3,0,12) ;
+    overflow: hidden;
+    color: white;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+}
+
+.about-content img{
+    max-width: 570px;
+}
+
+.about-content div{
+    flex:1;
+}
+
+.about-description h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+}
+
+.about-description p{
+    margin-bottom: 14px;
+    line-height: 150%;
+font-style: italic;
+}
+
+@media screen and (max-width: 768px){
+    .about-content{
+        flex-direction: column;
+    }
+}
+
+/*=====================================
+=================Footer================
+=======================================*/
+
+.services{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.services h2{
+    display: flex;
+    font-size: 56px;
+    line-height: 50%;
+    color: rgb(0, 0, 0);
+    margin-top: 2%;
+    margin-left: 3%;
+    
+}
+
+.footer{
+    background-color: rgb(3,0,12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px;
+    gap: 24px
+}
+
+.footer-icons{
+    display: flex;
+    gap: 8px;
+    color: white;
+}
+
+.footer-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: rgb(41, 192, 184);
+    }
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+footer img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.copyright p{
+    line-height: 30px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
