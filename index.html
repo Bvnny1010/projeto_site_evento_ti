@@ -2,51 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/style.css" rel="stylesheet">
-    <link href="/styles/fonts.css" rel="stylesheet">
-    <link href="/styles/media.css" rel="stylesheet">
+    <link rel="stylesheet" href="teste.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Landing Page</title>
+    <title>Document</title>
 </head>
 <body>
 
-    
+    <div class="background"> 
         
-    <header>
-        <div class="title">
-            <h1>Jornada</h1>
-            <h1>Full Stack</h1>
-        </div>
-            <ul>
-                    <a  href="./inicio.html" id="inicio-btn"><li>Início</li></a>
-                    <a href="./sobre.html" id="sobre-btn"><li>Sobre</li></a>
-                    <a href="./contato.html" id="contato-btn"><li>Contato</li></a>
-            </ul>
-    </header>
+        <div class="bg-home">
+            <header>
+    
+                <nav class="header-content container">
+                    <div class="header-icons">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
 
+                    <div class="header-logo">
+                        <img 
+                            src="/components/images/fullstack.jpg"
+                            alt="logofull"
+                        />
+                    </div>
 
+                    <div>
+                        <a class="header-button" href="#">
+                        Comprar Ingresso
+                        </a>
+                    </div>
+                </nav>
+            </header>
 
-    <main>
-        <aside>
+            <div class="menuemail" alt="menu">
                 <h2><span>Inscreva-se agora</span></h2>
-                <h2>Na Jornada Full Stack</h2>
+                <h2>No curso</h2>
+                <h2>
+                    <span>grátis</span>
+                </h2>
+
+                <div class="fullstack">
+                
+                    <h2>da Full Stack</h2>
+                </div>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                 </p>
             <form>
                 <input type="text" placeholder="Nome">
                 <input type="text" placeholder="E-mail">
-                <input type="submit" placeholder="Enviar">
+
+                <button onclick="exibirAlerta()" id="btnClique">Enviar</button>
+
+                    <script type="text/javascript" src="teste.js"></script>
+
+                </button>
             </form>
-        </aside>
+            </div>
+    
+    
+        </div>
 
-        <article>
-            <img src="/components/images/fullstack.jpg" alt="logofull">
-        </article>
+    </div>
 
-    </main>
+        <section class="about">
+            <div class="container about-content">
+                <div>
+                    <img 
+                    src="/components/images/feiradetech.jpg"
+                    />
+                </div>
+    
+                <div class="about-description">
+                    <h2>Sobre</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- FOOTER -->
+     <div class="services">
+        <h2>Venha Conhecer</h2>
+     </div>
+
+     <iframe 
+     width="100%"
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2154.7824346984557!2d-47.90042580351617!3d-15.78359615048482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3af5eeb75937%3A0xfd6e9aa239a3075b!2sArena%20BRB%20Man%C3%A9%20Garrincha!5e0!3m2!1spt-BR!2sbr!4v1722882459198!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+     <footer class="footer">
+        <div class="footer-icons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+
+        </div>
+
+
+            <div>
+            <img
+                src="/components/images/fullstack.jpg"
+                alt="Logo Stack"
+                />
+            </div>
+
+            <section class="copyright">
+                <div class="copyright-footer">
+
+                <p>Copyright 2024 | Fullstack Co. Todos direitos reservados.</p>
+
+                </div>
+            </section>
+     </footer>
+
 
 </body>
 </html>
